@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import org.apache.log4j.Logger;
-
 public class PausableFileTraverser implements Runnable {
 
 	public interface FileTravrerserCallback {
@@ -15,8 +13,6 @@ public class PausableFileTraverser implements Runnable {
 
 		void completed();
 	}
-
-	private static final Logger logger = Logger.getLogger(PausableFileTraverser.class);
 
 	private volatile boolean running = true;
 	private volatile boolean paused = false;
