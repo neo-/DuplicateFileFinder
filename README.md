@@ -1,0 +1,2 @@
+# DuplicateFileFinder
+Find duplicate files
